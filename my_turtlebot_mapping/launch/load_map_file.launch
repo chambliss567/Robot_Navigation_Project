@@ -1,0 +1,5 @@
+<launch>
+
+    <node name="map_server" pkg="map_server" type="map_server"  output="screen" args="$(find my_turtlebot_mapping)/maps/track_map.yaml" />
+
+</launch>

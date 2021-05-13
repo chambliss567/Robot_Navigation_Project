@@ -1,0 +1,5 @@
+<launch>
+
+    <node pkg="my_turtlebot_navigation" type="move_to_destination_service_server.py" name="move_to_spot" output="screen" />
+
+</launch>

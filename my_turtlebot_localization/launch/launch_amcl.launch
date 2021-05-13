@@ -1,0 +1,15 @@
+<launch>
+
+  <!-- Run the map server -->
+  <include file="$(find my_turtlebot_mapping)/launch/load_map_file.launch" />
+
+  <arg name="scan_topic" default="scan" />
+
+  <node pkg="amcl" type="amcl" name="amcl">
+    <rosparam file="$(find my_turtlebot_localization)/config/amcl_params.yaml" command="load" />
+    <remap from="scan" to="/scan"/>
+  </node>
+  <!--- Run Move Base -->
+  <include file="$(find realrobotlab)/launch/main.launch" />
+
+</launch>

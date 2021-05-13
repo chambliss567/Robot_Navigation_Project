@@ -1,0 +1,5 @@
+<!-- Launch move_base.launch and move_to_destination_service server launcher-->
+<launch>
+    <include file="$(find my_turtlebot_path_planning)/launch/move_base.launch" />
+    <include file="$(find my_turtlebot_navigation)/launch/launch_move_to_destination_service.launch" />
+</launch>
