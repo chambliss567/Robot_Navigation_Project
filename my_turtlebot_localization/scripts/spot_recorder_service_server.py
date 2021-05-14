@@ -46,6 +46,7 @@ class RecordLocation(object):
             self.response.message = output_message[:-2] + " recorded in " + self.dir_name + "/" + self.filename
             rospy.loginfo(self.response.message)
             self.positions = {}
+            output_file.close()
             return self.response
 
     def read_amcl_pose(self, amcle_pose):
