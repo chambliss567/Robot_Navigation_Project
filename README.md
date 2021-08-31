@@ -60,9 +60,3 @@ To start rviz with the desired configuration, run the following command:</br>
 
 To send a service request to the /move_to_spot service, run the following command:</br>
 **rosservice call /move_to_spot *label***
-
-## Release Notes
-
-### 1.0
-
-Initial release.
